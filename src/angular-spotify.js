@@ -446,7 +446,7 @@
             options.q = q;
             options.type = type;
 
-            return this.api('/search', 'GET', options);
+            return this.api('/search', 'GET', options, null, this._auth());
           },
 
 
