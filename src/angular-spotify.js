@@ -273,6 +273,10 @@
           /**
             ====================== Library =====================
            */
+          getRecentlyPlayed: function(options) {
+            return this.api('/me/player/recently-played', 'GET', options, null, this._auth());
+          },
+
           getSavedUserTracks: function (options) {
             return this.api('/me/tracks', 'GET', options, null, this._auth());
           },
